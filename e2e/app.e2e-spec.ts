@@ -1,14 +1,21 @@
-import { ProjetoMaeDoHarikoiPage } from './app.po';
 
-describe('projeto-mae-do-harikoi App', () => {
-  let page: ProjetoMaeDoHarikoiPage;
+import {RootPage} from './root/root.po';
+const expect = global['chai'].expect;
+
+describe('angular-cli-seed App', () => {
+  let page: RootPage;
 
   beforeEach(() => {
-    page = new ProjetoMaeDoHarikoiPage();
+    page = new RootPage();
   });
 
-  it('should display welcome message', () => {
+  it('will do normal tests', () => {
+    expect(true).to.be.ok;
+  });
+
+  it('will display its title', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+    // change the following lines to have "eventually"
+    expect(page.getParagraphText()).to.eventually.contain('Listing search POC');
   });
 });
