@@ -21,5 +21,6 @@ export class AppComponent {
 	});
 
 	constructor(public fullpageService: MnFullpageService) {
+		
 	}
 }
