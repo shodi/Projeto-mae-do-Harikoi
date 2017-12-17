@@ -19,8 +19,9 @@
 			"testTsconfig": "tsconfig.spec.json",
 			"prefix": "app",
 			"styles": [
+				"../node_modules/bootstrap/dist/css/bootstrap.min.css",
 				"../node_modules/ng2-toasty/style.css",
-				"styles.css"
+				"styles.scss"
 			],
 			"scripts": [
 				"../node_modules/jquery/dist/jquery.js",

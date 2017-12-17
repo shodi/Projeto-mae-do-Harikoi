@@ -4,6 +4,7 @@ import { MnFullpageModule } from 'ngx-fullpage';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { SharedModule } from './shared.module';
 
 @NgModule({
 	declarations: [
@@ -12,7 +13,8 @@ import { AppComponent } from './app.component';
 	imports: [
 		BrowserModule,
 		MnFullpageModule.forRoot(),
-		BrowserAnimationsModule
+		BrowserAnimationsModule,
+		SharedModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
